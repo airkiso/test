@@ -1,0 +1,94 @@
+/*.map {
+    position: relative;
+    top: -500;
+    right: -700px;
+    width: 50%;
+    height: 100vh;
+
+  }*/
+  /*
+  .map {
+    position: absolute;
+    top: 0
+    right: 0;
+    transform: translate(70%,10%);
+    width: 50%;
+    height: 50%;
+
+  }
+  .values {
+    position: absolute;
+    top: 0;
+    right:-50%;
+    transform: translate(0%, -80%);
+    width: 50%;
+    height: 50%;
+  }
+  */
+  .map-container {
+    position: absolute;
+    /*width: 100%;*/
+     width: calc(70% - 10px);
+    height: 50%;
+
+    transform: translate(0%,10%);
+     background-color: #1F363D;
+     margin-left: 550px;
+
+
+}
+
+.map {
+    position: absolute;
+    top:50px;
+    right: 300px;
+    width: 50%; /* Adjust this value based on your desired width */
+    height: 50%;
+
+
+    /*transform: translate(70%,10%);
+    /* Add any other styles you need for the map container */
+}
+
+.values-container {
+    position: absolute;
+    top: 0;
+
+    left: calc(30% + -810px); /* Adjust the width and gap size as needed */
+    width: calc(100% - 910px); /* Adjust the width and gap size as needed */
+    /*left: 200px;
+    width: 30%; /* Adjust this value based on your desired width */
+    height: 100%;
+    background-color: #1F363D;
+    /* Add any other styles you need for the values container */
+    margin-left: -100px;
+}
+
+.values {
+     display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Adjust this value as needed */
+    /* Add any other styles you need for the combobox container */
+    align-items: center;
+
+}
+ .values label {
+
+font-size: 16px; /* Adjust this value for the label font size */
+color: white; /* White label color */
+text-align: left;
+margin-left:-200px;
+}
+
+.values select {
+ margin-top: 10px;
+appearance: none; /* Remove default styling */
+background-color: white; /* Combobox background color */
+border: 1px solid #ccc; /* Combobox border */
+padding: 8px 12px; /* Combobox padding */
+font-size: 14px; /* Combobox font size */
+color: #333; /* Combobox text color */
+border-radius: 4px; /* Combobox border radius */
+width:80%;
+/* Add any other styles you need for the combobox */
+}

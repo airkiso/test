@@ -1,7 +1,49 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-
+<head>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+</head>
+<div class="map-container">
+    <div class="map">
+        {{map|safe}}
+    </div>
+    <div class="values-container">
+        <div class="values">
+            <label for="SPI_1">Select a SPI_1 value:</label>
+            <select id="SPI_1">
+                <option value=">-2">>-2</option>
+                <option value="<-2"><-2</option>
+            </select>
+            <label for="SPI_3">Select a SPI_3 value:</label>
+            <select id="SPI_3">
+                <option value=">-1">>-1</option>
+                <option value="<-1"><-1</option>
+            </select>
+            <label for="SWDI">Select a SWDI value:</label>
+            <select id="SWDI">
+                <option value="(-5,-2)">>-1</option>
+                <option value="<-1"><-1</option>
+            </select>
+            <label for="SWDI">Select a SPI_3 value:</label>
+            <select id="SPI_3">
+                <option value=">-1">>-1</option>
+                <option value="<-1"><-1</option>
+            </select>
+        </div>
+    </div>
+</div>
+<!--
+<div class="values">
+     <label for="SPI_1">Select a SPI_1 value:</label>
+  <select id="SPI_1">
+    <option value=">-2">>-2</option>
+    <option value="<-2"><-2</option>
+      </select>
+    </div>
+<div class="map">
 {{map|safe}}
+</div>-->
 
 {% endblock %}
